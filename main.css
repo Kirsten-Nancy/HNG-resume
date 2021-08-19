@@ -122,7 +122,7 @@ footer p {
 
     .intro {
         width: 500px;
-        word-wrap: break-word;
+        /* word-wrap: break-word; */
     }
 
     #about {
