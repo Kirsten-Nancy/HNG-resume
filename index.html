@@ -14,14 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-    <link rel="stylesheet" href="main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Nancy Korir</title>
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand nancy" href="#"><img class="logo" src="images/korir_blue.png" alt="Logo"> Nancy Korir</a>
+            <a class="navbar-brand" href="#"><img class="logo" src="images/korir_blue.png" alt="Logo">
+                Nancy Korir</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,10 +39,16 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li> -->
                 </ul>
             </div>
@@ -46,63 +56,50 @@
     </nav>
 
     <header>
-<<<<<<< HEAD
-        <img src="images/kirsten.jpeg" class="profile-pic" alt="">
-=======
-        <img src="images/kirsten.jpeg" alt="kirsten" class="img-fluid">
->>>>>>> 72249092713ff404ca072815c093288535d1f2b7
-        <div class="intro">
-            <h1>Hi, I'm Korir.</h1>
-            <p>I'm currently a computer science student at Harbin Engineering University. I am passionate about creating
-                practical and innovative solutions to problems through code. I’m passionate about open-source projects
-                and recently contributed in a project during the Open Source Day organized by AnitaB.org.</p>
-            <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img class="zuri-img"
-                        src="images/zuri.png"></a></p>
-            <!-- <p>You can reach me through:</p> -->
 
-            <!-- <a href="https://github.com/Kirsten-Nancy" target="blank">
-                <i class="fab fa-2x fa-github-square"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nancy-korir-a53402110/" target="blank">
-                <i class="fab fa-2x fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/korjnan" target="blank">
-                <i class="fab fa-2x fa-twitter-square"></i>
-            </a> -->
+
+
+        <div class="intro">
+            <h1>Hi, I'm Nancy Korir.</h1>
+            <h3>Software engineer </h3>
+            <a href="https://drive.google.com/file/d/1F4Rl3MXnxZ069L6Zb-c8qrrG9u4guKIi/view?usp=sharing"
+                class="btn btn-info btn-lg" role="button">Download CV</a>
         </div>
 
     </header>
 
-    <main>
-    <section id="about">
-        <div class="experience">
-            <h2>About Me</h2>
-            <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have created
-                two personal full-stack web applications using React and Django. I developed and integrated a REST API
-                in both projects by using the Django REST framework. </p>
-            <p>I’m passionate about open-source projects and recently contributed in a project during the Open Source
-                Day organized by AnitaB.org.</p>
-            <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img class="zuri-img"
-                        src="images/zuri.png"></a></p>
+    <section>
+        <h2>About Me</h2>
+        <div id="about">
+            <div class="profile-div" data-aos="zoom-in-right" data-aos-duration="3000" >
+                <img src="images/kirsten.jpeg" alt="" class="profile-pic">
+            </div>
+            <div class="prof-description" data-aos="zoom-in-left" data-aos-duration="3000">
+                <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have
+                    created
+                    two full-stack web applications using React and Django. I developed and integrated a REST
+                    API
+                    in both projects by using the Django REST framework. </p>
+                <p>I’m passionate about open-source projects and recently contributed in a project during the Open
+                    Source
+                    Day organized by AnitaB.org.</p>
+                <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img
+                            class="zuri-img" src="images/zuri.png"></a></p>
+            </div>
         </div>
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Python</li>
-            </ul>
-        </div>
+
+
     </section>
 
+
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100 text-center">
-                    <img class="card-img-top mx-auto" src="images/recipe.png" alt="Card image cap">
+        <h2>My Portfolio</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="card h-85 text-center mx-auto" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="images/food.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Recipe Application</h5>
                         <p class="card-text">I love baking pastries so I created a web app to help me share
@@ -114,9 +111,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 text-center">
-                    <img class="card-img-top mx-auto" src="images/todo-list.png" alt="Card image cap">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="card h-85 text-center mx-auto" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="images/todo.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">To-do Application</h5>
                         <p class="card-text">I created a to-do application using React and Django. I also intergrated a
@@ -127,9 +124,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 text-center">
-                    <img class="card-img-top mx-auto" src="images/vegetables.png" alt="Card image cap">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="card h-85 text-center mx-auto" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="images/veges.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">E-Mavuno</h5>
                         <p class="card-text">Developed a platform using Flutter and Firebase where farmers can post
@@ -142,9 +139,9 @@
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 text-center">
-                    <img class="card-img-top mx-auto" src="images/quiz.png" alt="Card image cap">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="card h-85 text-center mx-auto" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="images/quiz.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Quiz App</h5>
                         <p class="card-text">I used OpenTrivia Database API to create a quiz app using Flutter where the
@@ -157,9 +154,9 @@
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 text-center">
-                    <img class="card-img-top mx-auto" src="images/padlock.png" alt="Card image cap">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="card h-100 text-center mx-auto" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="images/password.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Password Generator and manager</h5>
                         <p class="card-text">I created a password manager to generate safe and secure passwords using
@@ -170,14 +167,152 @@
                 </div>
             </div>
         </div>
+
+    </section>
+
+
+    <section>
+        <h2>Education & Skills</h2>
+        <div id="education">
+            <div class="education-div" data-aos="zoom-in-right" data-aos-duration="2000">
+                <div class="grad">
+                    <img class="grad-cap" src="images/graduate.png">
+                </div>
+
+                <div>
+                    <small>2018-2022</small>
+                    <h6>Bsc. in Computer Science</h6>
+                    <p>Harbin Engineering University</p>
+                </div>
+                <div>
+                    <small>2017-2018</small>
+                    <h6>Chinese Language</h6>
+                    <p>Northeast Normal University</p>
+                </div>
+            </div>
+            <div class="skills" data-aos="zoom-in-left" data-aos-duration="2000">
+                <table class="buttons">
+                    <tr>
+                        <td> <button class="button">HTML5</button></td>
+                        <td><button class="button">CSS</button></td>
+                       
+                                         
+                    </tr>
+                    <tr>
+                        <td><button class="button">Javascript</button></td>       
+                        <td><button class="button">Python</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button">Django</button></td>
+                        <td><button class="button">Git</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button">PostgreSQL</button></td>
+                        <td><button class="button">Cloud Firestore</button></td>
+                        
+                        
+                    </tr>
+
+                </table>
+              
+            </div>
         </div>
     </section>
-    </main>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="position">
+                <h6>Software Developer</h6>
+                <p>Remote</p>
+                <p>Aug 2021 - Oct 2021</p>
+                <button class="btn btn-outline-info">Internship</button>
+            </div>
+            <div class="company">
+                <h6>OpenGenus Foundation</h6>
+                <p> Develop and design a small system to learn how a large real system works.</p>
+                <p>Publish technical articles on system design and development. </p>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="position">
+                <h6>Mentee – Python Track</h6>
+                <p>Remote</p>
+                <p>Jun 2020 - Aug 2020</p>
+                <button class="btn btn-outline-info">Mentorship</button>
+            </div>
+            <div class="company">
+                <h6>She Code Africa</h6>
+                <p>Created an e-commerce web application using HTML, CSS and Django</p>
+                <p>Published a technical article on the applications of artificial intelligence in agriculture. </p>
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="position">
+                <h6>Information Technology Intern</h6>
+                <p>Nairobi, Kenya</p>
+                <p>Jan 2021 - Mar 2019</p>
+                <button class="btn btn-outline-info">Internship</button>
+            </div>
+            <div class="company">
+                <h6>Quasar Group Limited</h6>
+                <p>Designed, developed and maintained the company’s website using HTML, CSS and
+                    JavaScript.</p>
+                <p>Maintained the company’s network infrastructure.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
 
     <footer>
-        <p>© 2021 Nancy Korir</p>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-lg-3">
+                <p>Harbin Engineering University</p>
+                <p>Nangang ST.</p>
+            </div>
+            <div class="col-md-2 col-lg-3">
+                <p>korjnan@gmail.com</p>
+                <p>13104072856</p>
+            </div>
+            <div class="col-md-2 col-lg-3">
+
+                <p>
+
+                    <a href="https://github.com/Kirsten-Nancy" target="blank">
+                        <i class="fab fa-2x fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nancy-korir-a53402110/" target="blank">
+                        <i class="fab fa-2x fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/korjnan" target="blank">
+                        <i class="fab fa-2x fa-twitter-square"></i>
+                    </a>
+                </p>
+                <p>© 2021 Nancy Korir</p>
+            </div>
+        </div>
+
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', "particles.json", function () {
+            console.log('particles.js config loaded');
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
