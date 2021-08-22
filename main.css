@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #F8F9FA;
+    /* background-color: #F8F9FA; */
+    background-color: #FEFEFE;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -24,15 +25,17 @@ nav {
 
 header {
     display: flex;
-    padding: 3rem 15%;
+    padding: 5rem 25%;
     margin-top: 5rem;
 }
 
-header img {
+.profile-pic {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50%;
+    /* border: 10px solid rgb(70, 54, 54); */
+    box-shadow: 0 0 0 10px #9de5f1;
 }
 
 .intro {
@@ -71,9 +74,10 @@ h2 {
     margin-bottom: 0.8rem;
 }
 
-.experience img {
+.zuri-img {
     width: 80px;
-    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 #projects {
